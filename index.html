@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="新能源汽车研发项目进度与风险监控系统——基于公开案例的个人模拟项目，包含WBS、物料齐套、Issue、CR、成本与自动化周报。" />
+  <title>新能源汽车研发项目管理｜个人作品集</title>
+  <style>
+    :root{--ink:#10233a;--muted:#627184;--line:#e4eaf0;--teal:#087f73;--bg:#f5f8fa;--blue:#184c79}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);line-height:1.7}
+    a{color:inherit} .wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    header{background:#0b2238;color:white;position:relative;overflow:hidden}header:before{content:"";position:absolute;inset:auto -130px -210px auto;width:520px;height:520px;border-radius:50%;border:88px solid rgba(45,168,156,.13)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:20px;position:relative}nav .brand{font-weight:800;letter-spacing:.025em;font-size:15px}nav .navlinks{display:flex;gap:24px;color:#d6e3ec;font-size:13px;flex-wrap:wrap}nav a{text-decoration:none}nav a:hover{text-decoration:underline}
+    .hero{padding:72px 0 86px;position:relative;max-width:890px}.eyebrow{font-size:12px;letter-spacing:.09em;font-weight:750;color:#79d6c7;text-transform:uppercase}h1{font-size:clamp(32px,5.1vw,58px);line-height:1.21;margin:18px 0 22px;font-weight:850;letter-spacing:-.03em}.hero p{font-size:17px;color:#d3dfe9;max-width:740px;margin:0 0 30px}.pill{display:inline-block;border:1px solid #639d97;background:#174a50;border-radius:99px;color:#dcfff6;font-size:12px;font-weight:700;padding:5px 12px;margin:0 8px 10px 0}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;border-radius:10px;padding:12px 18px;font-size:14px;font-weight:740;background:white;color:#0d3344;box-shadow:0 2px 8px #0001}.btn.alt{background:transparent;border:1px solid #7697ae;color:white;box-shadow:none}.btn:hover{transform:translateY(-1px)}
+    main{padding:0 0 70px}.metrics{margin-top:-35px;position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.metric,.card,.panel{background:white;border:1px solid var(--line);border-radius:16px;box-shadow:0 5px 24px rgba(24,54,74,.035)}.metric{padding:24px}.metric strong{font-size:30px;line-height:1.3;display:block}.metric span{font-size:13px;color:var(--muted)}.metric .foot{display:block;margin-top:12px;color:#74859a;font-size:11px}
+    section{padding-top:72px}section h2{font-size:28px;line-height:1.25;letter-spacing:-.02em;margin:0 0 16px}section .lead{color:var(--muted);margin:0 0 26px;max-width:850px}.kicker{color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.12em}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px}.card h3{margin:0 0 8px;font-size:17px}.card p{font-size:14px;color:var(--muted);margin:0}.number{font-size:12px;color:var(--teal);font-weight:800;margin-bottom:8px}.panel{padding:27px}.panel p{margin:8px 0;color:var(--muted)}.source{font-size:13px;color:var(--muted)}.source a{color:var(--blue);text-underline-offset:3px}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}.step{border:1px solid #d9e3eb;background:white;border-radius:12px;padding:17px 14px}.step small{color:var(--teal);font-weight:800}.step h3{font-size:14px;margin:4px 0 5px}.step p{font-size:12px;color:var(--muted);margin:0}.preview{width:100%;height:auto;display:block;border-radius:12px;border:1px solid #dce4ec}.files{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.file{display:block;text-decoration:none;background:white;border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:box-shadow .15s,border-color .15s}.file:hover{border-color:#8ec9c1;box-shadow:0 8px 26px #184e5215}.file strong{display:block;font-size:15px;margin-bottom:4px}.file span{color:var(--muted);font-size:12px}.notice{background:#eaf5f2;border-left:4px solid #168878;padding:17px 20px;border-radius:0 12px 12px 0;color:#275950;font-size:13px}.quote{border-left:3px solid var(--teal);padding-left:20px;color:#3c5368;font-size:15px;max-width:900px}footer{padding:28px 0 48px;border-top:1px solid var(--line);font-size:12px;color:#76889a}
+    @media(max-width:780px){nav{align-items:flex-start}nav .navlinks{gap:9px}.hero{padding:55px 0 78px}.metrics{grid-template-columns:repeat(2,1fr)}.grid2,.grid3,.files{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}section{padding-top:55px}.metric{padding:19px}}
+    @media(max-width:420px){nav .navlinks{display:none}.flow{grid-template-columns:1fr}.metrics{gap:8px}.metric{padding:15px}.metric strong{font-size:25px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+  <nav aria-label="主导航"><div class="brand">PORTFOLIO / PROJECT 01</div><div class="navlinks"><a href="#overview">项目概览</a><a href="#approach">管理方法</a><a href="#dashboard">成果展示</a><a href="#downloads">下载文件</a></div></nav>
+  <div class="hero">
+    <div class="eyebrow">Automotive Project Management · Data Analytics · AI</div>
+    <h1>新能源汽车研发项目<br>进度与风险监控系统</h1>
+    <div><span class="pill">个人模拟项目</span><span class="pill">公开案例重建</span><span class="pill">Python · Excel · Streamlit</span></div>
+    <p>以真实汽车电池线束研发案例为背景，构建从WBS、物料齐套、Issue与CR，到工时成本、项目周报的完整管理原型；通过确定性规则完成指标计算，并保留AI辅助分析接口和人工审批边界。</p>
+    <div class="buttons"><a class="btn" href="#dashboard">查看项目成果 ↗</a><a class="btn alt" href="files/ai_assistant_source.zip" download>下载代码与数据 ↓</a></div>
+  </div>
+</div>
+</header>
+<main class="wrap">
+  <div class="metrics" aria-label="模拟项目的关键指标">
+    <div class="metric"><strong>205件</strong><span>案例试制目标</span><span class="foot">数字来自公开案例背景</span></div>
+    <div class="metric"><strong>44.4%</strong><span>WBS任务完成率</span><span class="foot">模拟 4/9项</span></div>
+    <div class="metric"><strong>180件</strong><span>当前物料齐套上限</span><span class="foot">模拟，不代表已生产</span></div>
+    <div class="metric"><strong>5项</strong><span>预测延期任务</span><span class="foot">模拟数据</span></div>
+  </div>
+  <section id="overview">
+    <div class="kicker">01 / PROJECT CONTEXT</div><h2>项目背景与业务问题</h2>
+    <p class="lead">公开研究记录了2019年汽车电池线束开发与205件小批量制造项目，涉及Excel项目计划、BOM调整、设备交付及跨专业沟通。为避免混淆，本页面只将它作为业务背景；具体任务、交期、零部件数量与风险指标由个人设计模拟。</p>
+    <div class="grid2">
+      <div class="card"><div class="number">BUSINESS PROBLEM</div><h3>跨部门信息分散</h3><p>采购交期、研发版本、制造试装和质量放行分属不同流程；如果缺少统一台账，容易遗漏关键节点与未决问题。</p></div>
+      <div class="card"><div class="number">PROJECT GOAL</div><h3>建立可复核的项目管理闭环</h3><p>把任务、物料、Issue、CR与成本放在统一口径下统计，提供风险预警、决策依据和可审阅的周报草稿。</p></div>
+    </div>
+    <p class="source" style="margin-top:18px">参考依据：<a href="https://doi.org/10.3390/su12219245" target="_blank" rel="noopener noreferrer">Sustainability (2020), 12(21), 9245 — 真实汽车零部件开发项目研究</a></p>
+  </section>
+  <section id="approach">
+    <div class="kicker">02 / METHOD</div><h2>项目管理方法</h2>
+    <p class="lead">先明确交付目标和关键依赖，再持续监控执行偏差，最后通过责任分配、流程审批与会议督办形成可追溯的管理闭环。</p>
+    <div class="flow">
+      <div class="step"><small>STEP 01</small><h3>WBS任务拆解</h3><p>任务编码、责任人、基线、预测日期、依赖关系</p></div>
+      <div class="step"><small>STEP 02</small><h3>物料齐套管理</h3><p>需求量、到货量、质量放行、理论配套上限</p></div>
+      <div class="step"><small>STEP 03</small><h3>Issue风险跟踪</h3><p>问题分级、升级期限、责任部门、关闭证据</p></div>
+      <div class="step"><small>STEP 04</small><h3>CR变更控制</h3><p>影响评估、评审意见、正式授权、执行状态</p></div>
+      <div class="step"><small>STEP 05</small><h3>周报与复盘</h3><p>成本偏差、风险看板、行动项与待决事项</p></div>
+    </div>
+  </section>
+  <section id="dashboard">
+    <div class="kicker">03 / DELIVERABLES</div><h2>可展示的项目成果</h2>
+    <p class="lead">以下看板与数据均为教学模拟快照，统计日期为2026年9月21日；不是任何汽车企业的生产系统或真实绩效。</p>
+    <div class="panel"><img class="preview" src="assets/dashboard_preview.png" alt="模拟项目工时成本与风险周报看板预览" loading="lazy" /><p class="source">项目看板预览。实际交互在本地运行的Streamlit应用中完成。</p></div>
+    <div class="grid3" style="margin-top:16px">
+      <div class="card"><h3>物料瓶颈识别</h3><p>模拟连接器放行360个、每件用2个，理论配套上限为180件；其余必需物料仍可能构成新的瓶颈。</p></div>
+      <div class="card"><h3>问题与变更边界</h3><p>Issue用于推动风险处理，CR用于评估需要正式批准的变更；AI不得自行批准设计或质量放行。</p></div>
+      <div class="card"><h3>工时成本复盘</h3><p>模拟实际累计127小时，较同期计划多15小时；人工成本偏差+1,455元，不等于最终项目超支。</p></div>
+    </div>
+  </section>
+  <section id="downloads">
+    <div class="kicker">04 / FILES</div><h2>下载与核验材料</h2>
+    <p class="lead">提供可复核文件，而不是只有一页漂亮的介绍。演示项目不包含企业机密、真实供应商记录或个人数据。</p>
+    <div class="files">
+      <a class="file" href="files/project_workbook.xlsx" download><strong>01 · 项目管理Excel工作簿 ↓</strong><span>WBS、物料、Issue、CR、成本和管理看板</span></a>
+      <a class="file" href="files/ai_assistant_source.zip" download><strong>02 · Python与Streamlit源码 ↓</strong><span>程序、样例CSV、自动化测试和本地运行说明</span></a>
+      <a class="file" href="files/sample_weekly_report.md" download><strong>03 · 自动生成的示范周报 ↓</strong><span>规则引擎生成的可审阅Markdown报告</span></a>
+      <a class="file" href="https://doi.org/10.3390/su12219245" target="_blank" rel="noopener noreferrer"><strong>04 · 案例研究原文 ↗</strong><span>公开论文，供核实业务背景和研究方法</span></a>
+    </div>
+  </section>
+  <section id="reflection">
+    <div class="kicker">05 / INSIGHTS</div><h2>项目收获与复盘</h2>
+    <p class="quote">我把项目管理理解为一条可以追溯的链条：明确交付要求、识别关键约束、建立统一数据口径、持续跟进风险，并将需要授权的决策交给相应负责人。Python提升分析效率，大模型只承担解释和报告草拟，不代替业务验证和审批。</p>
+    <div class="notice"><strong>项目性质说明：</strong>本成果是基于公开研究背景自主构建的个人教学模拟项目，不代表本人在蔚来或其他车企任职；所有执行指标和操作记录均为模拟，不用于证明真实项目绩效。产品原型未在企业生产环境部署。</div>
+  </section>
+</main>
+<footer><div class="wrap">个人项目作品集 · 可供招聘沟通与技术交流 · 所有模拟数字均已标注性质</div></footer>
+</body>
+</html>
